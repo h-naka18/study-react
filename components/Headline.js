@@ -6,8 +6,7 @@ export function Headline(props) {
     <>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>pages/{props.title}.js</code>
+          Get started by editing {props.children}
         </p>
         <div>
           <a
@@ -29,9 +28,8 @@ export function Headline(props) {
       </div>
 
       <div className={styles.center}>
-        <h2 className={styles.title}>{props.title} Page</h2>
+        <h2 className={styles.title}>{props.page} Page</h2>
       </div>
-
     </>
   )
 }
