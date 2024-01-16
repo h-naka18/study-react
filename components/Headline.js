@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import classes from '@/components/Headline.module.css'
 
 export function Headline(props) {
   return (
     <>
-      <div className={styles.description}>
+      <div className={classes.description}>
         <p>
           Get started by editing {props.children}
         </p>
@@ -18,7 +18,7 @@ export function Headline(props) {
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
-              className={styles.vercelLogo}
+              className={classes.vercelLogo}
               width={100}
               height={24}
               priority
@@ -27,8 +27,8 @@ export function Headline(props) {
         </div>
       </div>
 
-      <div className={styles.center}>
-        <h2 className={styles.title}>{props.page} Page</h2>
+      <div className={classes.center}>
+        <h2 className={classes.title}>{props.page} Page</h2>
       </div>
     </>
   )
